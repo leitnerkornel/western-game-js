@@ -1,23 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Western Game</title>
-</head>
-<body>
+{% extends "layout.html" %}
 
-<div class="fullscreen-bg">
-    <video loop muted autoplay poster="images/videoframe.jpg" class="back_ground_video">
-        <source src="static/video/desert.webm" type="video/webm">
-    </video>
+{% block content %}
+    <body class="index-bg">
+        <div class="index-content">
+            <a href="{{ url_for('first_level') }}">
+                <button class="btn" type="button">Start game</button>
+            </a>
+
+            <a href="{{ url_for('second_level') }}">
+                <button type="button">Start level 2</button>
+            </a>
+        </div>
+    </body>
+
+{% endblock %}
+
+{#<div class="fullscreen-bg">#}
+<!-- loop muted autoplay poster="images/videoframe.jpg" class="back_ground_video"
 </div>
-
-<a href="{{ url_for('first_level') }}">
-    <button type="button">Start game</button>
-</a>
-
-<a href="{{ url_for('second_level') }}">
-    <button type="button">Start level 2</button>
-</a>
-</body>
-</html>
