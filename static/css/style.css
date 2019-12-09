@@ -49,3 +49,6 @@
     text-align: center;
 }
 
+.first-level-bg {
+    cursor: url('/static/images/crosshair.cur'), auto;
+}
