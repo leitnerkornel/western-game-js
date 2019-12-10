@@ -8,12 +8,12 @@
 }
 
 .first-level-bg {
-    margin: 0;
-    height: 100%;
-    background-image: url('/static/images/level_1_streetview.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
 }
 
 .second-level-bg {
@@ -52,4 +52,8 @@
 
 .first-level-bg {
     cursor: url('/static/images/crosshair.cur'), auto;
+}
+
+.hello {
+    width: 10%;
 }
