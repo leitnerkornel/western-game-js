@@ -1,10 +1,8 @@
 .index-bg {
-    margin: 0;
-    height: 100%;
-    background-image: url('/static/images/desert_menu.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 .first-level-bg {
@@ -13,21 +11,17 @@
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-
 }
 
 .second-level-bg {
-    margin: 0;
-    height: 100%;
-    background-image: url('/static/images/level_2_tavern.jpg');
-    background-color: gold;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 .index-content {
-    position: absolute;
+    display: block;
     margin: 0 auto;
     width: 100%;
     min-height: 100%;
@@ -54,6 +48,6 @@
     cursor: url('/static/images/crosshair.cur'), auto;
 }
 
-.hello {
-    width: 10%;
+.second-level-bg {
+    cursor: url('/static/images/crosshair.cur'), auto;
 }
