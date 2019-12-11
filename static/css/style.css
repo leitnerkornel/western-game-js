@@ -6,7 +6,7 @@
 }
 
 .first-level-bg {
-
+    position: relative;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -50,4 +50,11 @@
 
 .second-level-bg {
     cursor: url('/static/images/crosshair.cur'), auto;
+}
+
+.bandit {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 10%;
 }
