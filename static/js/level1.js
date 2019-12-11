@@ -20,7 +20,7 @@ function addCharacter(file_name) {
 function deleteAfterShoot(event) {
     console.log(event);
     event.preventDefault();
-    ;
+    event.toElement.remove()
 }
 
 
@@ -32,3 +32,4 @@ addCharacter("bandit04")
 addCharacter("citizen01")
 addCharacter("citizen02")
 addCharacter("citizen03")
+
