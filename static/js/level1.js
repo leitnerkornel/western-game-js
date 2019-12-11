@@ -7,17 +7,28 @@ function setBackground() {
     document.querySelector('body').appendChild(background)
 }
 
-function addBandit() {
+function addCharacter(file_name) {
 
-    /*let div = document.createElement("div")
-    div.classList.add("bandit-div")
-    document.querySelector('body').appendChild(div)*/
     let bandit = document.createElement("img")
-    bandit.src = '/static/images/bandit04.png'
-    bandit.classList.add("bandit")
+    bandit.src = `/static/images/${file_name}.png`
+    bandit.classList.add(`${file_name}`)
+    bandit.addEventListener('click', deleteAfterShoot)
     document.querySelector('body').appendChild(bandit)
 }
 
 
+function deleteAfterShoot(event) {
+    console.log(event);
+    event.preventDefault();
+    ;
+}
+
+
 setBackground()
-addBandit()
+addCharacter("bandit01")
+addCharacter("bandit02")
+addCharacter("bandit03")
+addCharacter("bandit04")
+addCharacter("citizen01")
+addCharacter("citizen02")
+addCharacter("citizen03")
