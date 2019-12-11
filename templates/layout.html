@@ -10,6 +10,8 @@
     <link rel="icon" href="{{ url_for('static', filename='images/revolver.ico') }}"/>
 
     {% block head %} {% endblock %}
+    <audio autoplay loop src="{{ url_for('static', filename='audio/bgmusic.mp3') }}">
+    </audio>
 </head>
 
 {% block content %} {% endblock %}
