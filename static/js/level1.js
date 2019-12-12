@@ -28,6 +28,7 @@ function countPoints() {
         setPoints('points', points);
     }
     showPoints(points);
+    winCheck(points, 20000);
 }
 
 function deleteAfterShoot(event) {
@@ -68,6 +69,13 @@ function getPoints(json_name) {
 function showPoints(points) {
     let currentPoints = document.getElementById('points');
     currentPoints.innerText = `Points: ${points}`;
+}
+
+function winCheck(points, nextLevelPoints) {
+    if (points > `${nextLevelPoints}`) {
+        alert("You won. Reached level 2.")
+        window.location.href = "http://127.0.0.1:5000/level2"
+    }
 }
 
 function addSoundIcon() {
