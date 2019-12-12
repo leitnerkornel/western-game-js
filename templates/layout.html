@@ -10,7 +10,10 @@
     <link rel="icon" href="{{ url_for('static', filename='images/revolver.ico') }}"/>
 
     {% block head %} {% endblock %}
-<audio autoplay loop src="{{ url_for('static', filename='audio/bgmusic.mp3') }}" class="bg-sound" ></audio>
+<audio loop src="{{ url_for('static', filename='audio/bgmusic.mp3') }}" class="bg-sound" ></audio>
+<audio src="{{ url_for('static', filename='audio/missed_shootcutted.mp3') }}" class="missed-sound" ></audio>
+<audio src="{{ url_for('static', filename='audio/reload.mp3') }}" class="reload-sound" ></audio>
+<audio src="{{ url_for('static', filename='audio/shootcutted2.mp3') }}" class="succes-sound" ></audio>
 </head>
 <body class="background">
 {% block content %} {% endblock %}

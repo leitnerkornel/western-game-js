@@ -4,7 +4,7 @@ function setBackground() {
     let background = document.createElement("img");
     background.src = '/static/images/desert_menu.jpg';
     background.classList.add("background");
-    document.querySelector('body').appendChild(background)
+    document.querySelector('body').appendChild(background);
 }
 
 function addSoundIcon() {
@@ -31,10 +31,10 @@ function changeSoundOnOff(event) {
     }
 }
 
-
 function main() {
     setBackground();
     addSoundIcon();
+    succesfullHit();
 }
 
 main();
