@@ -1,20 +1,4 @@
-.index-bg {
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
-
-.first-level-bg {
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
-
-.second-level-bg {
+.background {
     position: relative;
     display: block;
     margin-left: auto;
@@ -108,5 +92,12 @@
     position: absolute;
     top: 20%;
     left: 50%;
+    z-index: 1;
+}
+.sound-icon {
+    position: absolute;
+    top: 89%;
+    left: 84.5%;
+    width: 5%;
     z-index: 1;
 }
