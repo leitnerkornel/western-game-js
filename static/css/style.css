@@ -4,6 +4,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    cursor: url('/static/images/crosshair.cur'), auto;
 }
 
 .index-content {
@@ -29,14 +30,6 @@
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
-}
-
-.first-level-bg {
-    cursor: url('/static/images/crosshair.cur'), auto;
-}
-
-.second-level-bg {
-    cursor: url('/static/images/crosshair.cur'), auto;
 }
 
 .bandit01 {
