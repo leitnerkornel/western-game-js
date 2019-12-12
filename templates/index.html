@@ -7,15 +7,10 @@
 {% endblock %}
 
 {% block content %}
-        <div class="index-content">
-            <a href="{{ url_for('first_level') }}">
-                <button class="btn" type="button">Start game</button>
-            </a>
-            <a href="{{ url_for('second_level') }}">
-                <button type="button">Start level 2</button>
-            </a>
-            <div class="div-for-sound">
-
-            </div>
-        </div>
+    <div class="index-content">
+        <a href="{{ url_for('first_level') }}">
+            <button class="btn" type="button">Start game</button>
+        </a>
+        <div class="div-for-sound"></div>
+    </div>
 {% endblock %}
